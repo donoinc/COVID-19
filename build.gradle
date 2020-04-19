@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://phonepe.bintray.com/PhonePeIntentSDK"
+        }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'    // Some issues in gradle:3.5.+
+        classpath 'com.google.gms:google-services:4.3.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io"}
+        maven {
+            url "https://phonepe.bintray.com/PhonePeIntentSDK"
+        }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task myZip(type: Zip) {
+    from projectDir
+
+    include 'build.gradle'
+    include 'gradle.properties'
+    include 'settings.gradle'
+    include 'app/src/'
+    include 'app/build.gradle'
+    include 'google-services.json'
+
+    archiveName 'AndroidEcommerce.zip'
+    destinationDir(projectDir)
+}

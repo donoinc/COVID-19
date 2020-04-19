@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "964913692119",
+    "firebase_url": "https://covid19-fe2bd.firebaseio.com",
+    "project_id": "covid19-fe2bd",
+    "storage_bucket": "covid19-fe2bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964913692119:android:e74edf7baf1b2dbd1ddf92",
+        "android_client_info": {
+          "package_name": "com.themescoder.laravelecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964913692119-qj92i94emubc6knvm6653sptn2pgetdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnUuUnRDDrjl1_HFvI4UZ0CASTa8Rv6g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964913692119-qj92i94emubc6knvm6653sptn2pgetdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
